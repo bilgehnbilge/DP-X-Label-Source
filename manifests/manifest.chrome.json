@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "DP | X Source Label",
+  "version": "0.1.0",
+  "description": "X'in tweet verisinde hâlâ duran 'source' alanını (Twitter for iPhone, Twitter Web Client vb.) tweet zaman damgasının yanında gösterir.",
+  "author": "bilgehnbilge",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "DP | X Source Label",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "injected.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "minimum_chrome_version": "111"
+}

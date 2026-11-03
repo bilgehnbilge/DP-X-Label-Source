@@ -1,0 +1,11 @@
+.xsl-label {
+  margin-left: 4px;
+  font-size: 15px;
+  color: rgb(113, 118, 123);
+  white-space: nowrap;
+}
+
+.xsl-label.xsl-missing {
+  opacity: 0.6;
+  font-style: italic;
+}

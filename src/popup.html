@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DP | X Source Label</title>
+  <style>
+    body { font: 13px/1.45 system-ui, sans-serif; width: 300px; margin: 0; padding: 14px; color: #0f1419; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    label { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0; }
+    p.note { color: #536471; margin: 10px 0 0; font-size: 12px; }
+    footer { margin-top: 12px; color: #536471; font-size: 11px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #15202b; color: #e7e9ea; }
+      p.note, footer { color: #8b98a5; }
+    }
+  </style>
+</head>
+<body>
+  <h1>DP | X Source Label</h1>
+  <label>
+    <input type="checkbox" id="enabled">
+    <span>Etiketleri göster</span>
+  </label>
+  <label>
+    <input type="checkbox" id="showMissing">
+    <span>Kaynak alanı yoksa "kaynak yok" yaz</span>
+  </label>
+  <p class="note">
+    X, yeni gönderiler için kaynak alanını artık döndürmüyor (Eylül 2026).
+    Etiket yalnızca X'in hâlâ verdiği eski gönderilerde ve bazı retweet'lerde görünür.
+    Linkteki <code>s=</code> değeri gönderinin cihazını göstermez.
+  </p>
+  <footer>bilgehnbilge tarafından oluşturuldu</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
